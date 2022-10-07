@@ -3,13 +3,11 @@ package stepDefinition;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import utilities.Driver;
 
-
-public class AmazonStepDefinition {
+public class AmazonStepDefinicition {
     @Given("Kullanici amazon sayfasına gider")
     public void kullaniciAmazonSayfasınaGider() {
-        Driver.getDriver().get("https://amazon.com");
+        //ddd
     }
 
     @Then("Kullanici nutella aratır")
