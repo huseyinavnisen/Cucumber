@@ -5,22 +5,31 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
-    public static Properties properties; // properties
-    static { // her methoddan önce çalışır
-        String dosyaYolu="target/configuration.properties";
+    public static Properties properties;
+
+    static{
+        String dosyaYolu="configuration.properties";
 
         try {
             FileInputStream fis=new FileInputStream(dosyaYolu);
-            properties= new Properties();
-            properties.load(fis); // fis in okuduğu bilgileri properties'e yükledi
+            // fis dosyayolunu tanimladigimiz configuration.properties dosyasini okudu
+            properties=new Properties();
+            properties.load(fis); // fis'in okudugu bilgileri properties'e yukledi
+
+
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 
-
     public static String getProperty(String key){
-        return properties.getProperty(key);  // properties'ten "key" karşılığında "value" değerini geri gönderir.
+        /*
+          test method'undan yolladigimiz string key degerini alip
+          Properties class'indan getProperty( ) method'unu kullanarak
+          bu key'e ait value'u bize getirdi
+         */
+
+        return properties.getProperty(key);
     }
 }
