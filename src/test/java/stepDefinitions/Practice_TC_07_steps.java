@@ -1,11 +1,10 @@
-package stepDefinition;
+package stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.Practice_TC_07_Pages;
-import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 

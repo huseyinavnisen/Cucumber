@@ -1,13 +1,10 @@
-package stepDefinition;
+package stepDefinitions;
 
 import io.cucumber.java.en.And;
-import junit.framework.Assert;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.HerokuPage;
 import utilities.Driver;
-import utilities.ReusableMethods;
 
 import java.time.Duration;
 

@@ -1,4 +1,4 @@
-package stepDefinition;
+package stepDefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -7,9 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import pages.NinjaPage;
 import utilities.Driver;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class NinjaStepDefinition {
 

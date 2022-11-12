@@ -1,12 +1,9 @@
-package stepDefinition;
+package stepDefinitions;
 
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
-import org.openqa.selenium.interactions.Actions;
-import pages.AmazonPage;
 import pages.PracticeAmazonPage;
-import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
